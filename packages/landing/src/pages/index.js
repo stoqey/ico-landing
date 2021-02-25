@@ -2,65 +2,56 @@ import React, { Fragment } from 'react';
 import Head from 'next/head';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
-import { agencyTheme } from 'common/theme/agency';
+import { cryptoTheme } from 'common/theme/crypto';
 import { ResetCSS } from 'common/assets/css/style';
-import { GlobalStyle, AgencyWrapper } from 'containers/Agency/agency.style';
-import Navbar from 'containers/Agency/Navbar';
-import BannerSection from 'containers/Agency/BannerSection';
-import FeatureSection from 'containers/Agency/FeatureSection';
-import AboutUsSection from 'containers/Agency/AboutUsSection';
-import WorkHistory from 'containers/Agency/WorkHistory';
-import BlogSection from 'containers/Agency/BlogSection';
-import TestimonialSection from 'containers/Agency/TestimonialSection';
-import TeamSection from 'containers/Agency/TeamSection';
-import VideoSection from 'containers/Agency/VideoSection';
-import NewsletterSection from 'containers/Agency/NewsletterSection';
-import QualitySection from 'containers/Agency/QualitySection';
-import Footer from 'containers/Agency/Footer';
+import { GlobalStyle, ContentWrapper } from 'containers/Crypto/crypto.style';
 import { DrawerProvider } from 'common/contexts/DrawerContext';
-import FaqSection from 'containers/Agency/FaqSection';
+import Navbar from 'containers/Crypto/Navbar';
+import Banner from 'containers/Crypto/BannerSection';
+import BannerSlider from 'containers/Crypto/BannerSlider';
+import Transactions from 'containers/Crypto/Transaction';
+import ControlSections from 'containers/Crypto/ControlSection';
+import TrustedProofSections from 'containers/Crypto/TrustedProof';
+import ScalableSections from 'containers/Crypto/ScalableSection';
+import SlideSections from 'containers/Crypto/CryptoSlides';
+import BetaSections from 'containers/Crypto/BetaSection';
+import Footer from 'containers/Crypto/Footer';
 
-const Main = () => {
+const Crypto = () => {
   return (
-    <ThemeProvider theme={agencyTheme}>
+    <ThemeProvider theme={cryptoTheme}>
       <Fragment>
-        {/* Start agency head section */}
         <Head>
-          <title>Agency | A react next landing page</title>
-          <meta name="theme-color" content="#10ac84" />
+          <title>Stoqey | Beat wallstreet from anywhere</title>
           <meta name="Description" content="React next landing page" />
+          <meta name="theme-color" content="#ec5555" />
+
           {/* Load google fonts */}
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Heebo:300,400,500,700"
             rel="stylesheet"
           />
         </Head>
         <ResetCSS />
         <GlobalStyle />
-        {/* End of agency head section */}
-        {/* Start agency wrapper section */}
-        <AgencyWrapper>
+        <ContentWrapper>
           <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
             <DrawerProvider>
               <Navbar />
             </DrawerProvider>
           </Sticky>
-          <BannerSection />
-          <FeatureSection />
-          <AboutUsSection />
-          <WorkHistory />
-          <BlogSection />
-          <QualitySection />
-          <VideoSection />
-          <TestimonialSection />
-          <TeamSection />
-          <FaqSection />
-          <NewsletterSection />
+          <Banner />
+          <BannerSlider />
+          <Transactions />
+          <ControlSections />
+          <TrustedProofSections />
+          <ScalableSections />
+          <SlideSections />
+          <BetaSections />
           <Footer />
-        </AgencyWrapper>
-        {/* End of agency wrapper section */}
+        </ContentWrapper>
       </Fragment>
     </ThemeProvider>
   );
 };
-export default Main;
+export default Crypto;

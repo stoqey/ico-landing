@@ -8,6 +8,7 @@ import Particle4 from 'common/assets/image/crypto/particles/particle-4.png';
 import Particle5 from 'common/assets/image/crypto/particles/particle-5.png';
 import Particle6 from 'common/assets/image/crypto/particles/particle-2.png';
 import Particle7 from 'common/assets/image/crypto/particles/particle-4.png';
+import ParticleStq from 'common/assets/image/crypto/particles/particle-6.png';
 
 const ParticlesComponent = () => {
   return (
@@ -24,6 +25,11 @@ const ParticlesComponent = () => {
             shape: {
               type: ['images'],
               images: [
+                {
+                  src: `${ParticleStq}`,
+                  width: 30,
+                  height: 30,
+                },
                 {
                   src: `${Particle1}`,
                   width: 25,
