@@ -2,7 +2,7 @@
   "name": "landing",
   "description": "",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "author": "Stoqey, Inc",
   "devDependencies": {
     "cross-env": "^7.0.2",

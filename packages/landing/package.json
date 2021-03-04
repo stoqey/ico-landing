@@ -1,6 +1,6 @@
 {
-  "name": "@superprops/next",
-  "version": "8.0.0",
+  "name": "@landing/next",
+  "version": "1.0.0",
   "private": true,
   "main": "firebaseFunctions.js",
   "scripts": {
