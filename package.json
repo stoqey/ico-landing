@@ -13,9 +13,7 @@
     "rimraf": "^3.0.2"
   },
   "workspaces": [
-    "packages/common",
-    "packages/landing",
-    "packages/landing-gatsby"
+    "packages/landing"
   ],
   "scripts": {
     "clean": "lerna clean --yes && rimraf node_modules",
