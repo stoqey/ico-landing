@@ -1,9 +1,9 @@
 name: production
 
-on:
-  push:
-    branches:
-      - "master"
+# on:
+#   push:
+#     branches:
+#       - "master"
 
 env:
   GKE_PROJECT: ${{ secrets.GKE_PROJECT }}
