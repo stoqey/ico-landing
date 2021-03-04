@@ -8,6 +8,7 @@ COPY packages/landing /app
 RUN apk --no-cache add pkgconfig autoconf automake libtool nasm build-base zlib-dev
 RUN yarn && yarn export
 
+# Use lighter image
 FROM mhart/alpine-node:slim-10.19
 COPY --from=builder /app .
 ENV NODE_ENV=production
