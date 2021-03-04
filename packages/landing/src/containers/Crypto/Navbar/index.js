@@ -50,7 +50,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               menuItems={MENU_ITEMS}
               offset={-70}
             />
-            <Link href="#">
+            <Link href="/web">
               <a className="navbar_button">
                 <Button {...button} title="GET STARTED" />
               </a>
@@ -68,7 +68,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 drawerClose={true}
                 offset={-100}
               />
-              <Link href="#">
+              <Link href="/web">
                 <a className="navbar_drawer_button">
                   <Button {...button} title="GET STARTED" />
                 </a>
