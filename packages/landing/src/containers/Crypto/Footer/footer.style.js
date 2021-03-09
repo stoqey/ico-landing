@@ -9,12 +9,41 @@ const FooterWrapper = styled.section`
   background-position: top center;
   background-size: cover;
   z-index: 1;
+  color: white;
+
   @media (max-width: 1440px) {
     padding: 80px 0 60px;
   }
+
   @media (max-width: 990px) {
   }
+
   @media (max-width: 767px) {
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+
+    .logo-box {
+      padding: 2px 100px;
+    }
+
+    .fitem {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      @media (max-width: 767px) {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+    }
   }
 
   .Language_search_select {
@@ -191,7 +220,7 @@ export const SocialList = styled.ul`
       border-radius: 50%;
       overflow: hidden;
       line-height: 1;
-      color: ${themeGet('colors.secondaryText', '#616970')};
+      color: ${themeGet('colors.white', '#fff')};
       position: relative;
       @media only screen and (max-width: 480px) {
         width: 20px;

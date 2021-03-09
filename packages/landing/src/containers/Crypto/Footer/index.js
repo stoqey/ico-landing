@@ -8,7 +8,12 @@ import Heading from 'common/components/Heading';
 import Select from 'common/components/Select';
 import Container from 'common/components/UI/Container';
 import ContactSections from '../Contact';
-import FooterWrapper, { List, ListItem, BgImageWrapper } from './footer.style';
+import FooterWrapper, {
+  List,
+  ListItem,
+  BgImageWrapper,
+  SocialList,
+} from './footer.style';
 import { menuWidget, Language_NAMES } from 'common/data/Crypto';
 import AppImage from 'common/assets/image/crypto/footerapp.svg';
 import PlaystoreImage from 'common/assets/image/crypto/footerplay.svg';
@@ -16,6 +21,7 @@ import FooterBG from 'common/assets/image/crypto/footer-bg.svg';
 import Logo from 'common/components/UIElements/Logo';
 import LogoImage from 'common/assets/image/logo-white.png';
 import LogoImageAlt from 'common/assets/image/logo.png';
+import { socialLinks } from './social';
 
 const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
   return (
@@ -24,23 +30,44 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
       <Container noGutter mobileGutter width="1200px">
         <div className="footer">
           <div className="fitem">
-            <Logo
-              href="#"
-              logoSrc={LogoImage}
-              title="Logo"
-              logoStyle={{
-                maxWidth: '200px',
-              }}
-              className="logo-alt"
-            />
+            <div className="logo-box">
+              <Logo
+                href="#"
+                logoSrc={LogoImage}
+                title="Logo"
+                logoStyle={{
+                  maxWidth: '200px',
+                }}
+                className="logo-alt"
+              />
+            </div>
+          </div>
+          <div className="fitem"></div>
+          <div className="fitem"></div>
+        </div>
+        <div className="footer">
+          <div className="fitem">
             <p>
               {' '}
-              Copyright © ${new Date().getFullYear()} Stoqey Inc. All rights
+              Copyright © {new Date().getFullYear()} Stoqey Inc. All rights
               reserved{' '}
             </p>
           </div>
 
-          <div></div>
+          <div className="fitem">
+            <SocialList>
+              {socialLinks.map((item) => (
+                <li className={item.name} key={`social__link-key${item.id}`}>
+                  <Link href={item.link}>
+                    <a aria-label="social share link">{item.icon}</a>
+                  </Link>
+                </li>
+              ))}
+            </SocialList>
+          </div>
+          <div className="fitem">
+            <p>support@stoqey.com</p>
+          </div>
         </div>
       </Container>
     </FooterWrapper>
