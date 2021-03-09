@@ -18,8 +18,8 @@
   "scripts": {
     "clean": "lerna clean --yes && rimraf node_modules",
     "clean:build": "lerna exec -- rimraf \"{.next,.cache,dist,out,build,.vercel}\"",
-    "next-dev": "yarn workspace @landing/next run dev",
-    "next-build": "yarn workspace @landing/next run build",
+    "dev": "yarn workspace @landing/next run dev",
+    "build": "yarn workspace @landing/next run build",
     "next-start": "yarn workspace @landing/next run start",
     "next-export": "yarn workspace @landing/next run export"
   },

@@ -88,7 +88,7 @@ TransactionsHistory.defaultProps = {
 
   // Transactions section title default style
   title: {
-    content: 'Our wallet is built for the crypto novice',
+    content: 'STQ™ is built for the novice investors',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -111,7 +111,7 @@ TransactionsHistory.defaultProps = {
     maxWidth: ['100%', '100%', '100%', '100%', '430px'],
   },
   sectionSubTitle: {
-    content: 'How Transactions Work',
+    content: 'How Stoqey works (ticker: STQ)',
     as: 'span',
     textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],
