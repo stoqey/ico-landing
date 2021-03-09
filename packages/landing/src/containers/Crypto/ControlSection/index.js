@@ -134,7 +134,7 @@ ControlSection.defaultProps = {
 
   // Transactions section title default style
   title: {
-    content: 'Take control of your credit and identity.',
+    content: 'Throw your money at our bots 🤖 🕺',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -146,8 +146,7 @@ ControlSection.defaultProps = {
   },
   // Transactions section description default style
   description: {
-    content:
-      'Crumbs makes crypto investing effortless and automated, so now you would not miss the right time to buy. From the customer wallet to the marchent wallet in a few minute.',
+    content: `Are you a Fulltime Mom, Athletic or Artist? Stoqey makes investing effortless and automated, so now you can focus on your most valued businesses and we'll take care of the investment part for you.`,
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
@@ -157,7 +156,7 @@ ControlSection.defaultProps = {
     maxWidth: ['100%', '100%', '100%', '100%', '430px'],
   },
   sectionSubTitle: {
-    content: 'Effortless crypto for everyone.',
+    content: 'Effortless investing for everyone.',
     as: 'span',
     textAlign: 'left',
     fontSize: ['16px', '16px', '18px', '20px', '20px'],
@@ -174,7 +173,7 @@ ControlSection.defaultProps = {
     fontWeight: '500',
   },
   readMoreTitle: {
-    content: 'Sale currently on hold. ',
+    content: 'Pre-IPO SALE STATUS: LIVE.',
     as: 'span',
     fontSize: ['18px', '18px', '20px', '20px', '20px'],
     lineHeight: ['25px', '27px', '27px', '27px', '27px'],
