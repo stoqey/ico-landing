@@ -21,12 +21,6 @@ const BetaSection = ({
   return (
     <BetaSectionWrapper id="betasection">
       <Container noGutter mobileGutter>
-        <Box className="row" {...row}>
-          <FeatureBlock
-            title={<Heading {...title} />}
-            description={<Text {...description} />}
-          />
-        </Box>
         <Box className="BetaSection">
           <FeatureSection>
             {BETA_FEATURE.map((item, index) => (

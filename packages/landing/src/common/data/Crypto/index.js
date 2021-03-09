@@ -90,13 +90,12 @@ export const TRANSACTIONS_FEATURE = [
   {
     image: FEATURE3,
     title: 'Get Paid',
-    des:
-      'Payment is sent out immediately from the wallet upon withdraw request.',
+    des: 'Payment is sent out immediately from the wallet.',
   },
   {
     image: FEATURE4,
     title: 'Get Investments Tips.',
-    des: 'Get look on which companies our robots are trading',
+    des: 'Get a look on which companies our robots are trading',
   },
 ];
 export const PROOFS_FEATURE = [
