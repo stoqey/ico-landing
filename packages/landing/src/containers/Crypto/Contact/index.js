@@ -133,7 +133,7 @@ ContactSection.defaultProps = {
 
   description: {
     content:
-      "You're one of the few chosen ones to invest in Stoqey before it launch!",
+      "You're one of the few chosen ones to invest in Stoqey before it launches!",
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',
