@@ -43,9 +43,10 @@ const Crypto = () => {
           </Sticky>
           <Banner />
           <BannerSlider />
+          <CountDownSection />
           <Transactions />
           <ControlSections />
-          <CountDownSection />
+
           {/* <TrustedProofSections /> */}
           {/* <ScalableSections /> */}
           {/* <SlideSections /> */}

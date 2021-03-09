@@ -24,7 +24,7 @@ export const ContentWrapper = styled.div`
   }
 
   h2 {
-    color: ${themeGet('colors.white', '#fff')};
+    color: ${themeGet('colors.black', '#000')};
     font-size: 32px;
     line-height: 44px;
     font-weight: 400;

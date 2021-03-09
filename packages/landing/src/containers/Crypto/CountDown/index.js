@@ -6,7 +6,7 @@ import Button from 'common/components/Button';
 import Image from 'common/components/Image';
 import Container from 'common/components/UI/Container';
 import NormalClock from './timer';
-const deadline = new Date(Date.parse(new Date()) + 12 * 24 * 60 * 60 * 1000);
+const deadline = new Date('2021-03-20');
 import SectionWrapper, { ContentWrapper } from './countdown.style';
 
 const CountDownSection = () => {
@@ -20,7 +20,7 @@ const CountDownSection = () => {
               <NormalClock countdown={deadline} divider="true" />
             </div>
           </Fade>
-          <Button className="primary" title="PRE-ORDER NOW" />
+          <Button className="primary" title="BUY NOW" />
         </ContentWrapper>
       </Container>
     </SectionWrapper>
