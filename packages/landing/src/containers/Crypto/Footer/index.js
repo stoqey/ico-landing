@@ -24,14 +24,14 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
       <Container noGutter mobileGutter width="1200px">
         <Box className="row mainRow" {...row}>
           <Box {...colOne}>
-            <Heading content="Language" {...titleStyle} />
+            {/* <Heading content="Language" {...titleStyle} />
             <Select
               options={Language_NAMES}
               placeholder="English"
               className="Language_search_select"
               aria-label="Language_search_input"
-            />
-            <Heading
+            /> */}
+            {/* <Heading
               content="Download The App"
               {...titleStyle}
               className="appDownload"
@@ -47,7 +47,7 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
                   <Image src={PlaystoreImage} alt="PlaystoreImage Image" />
                 </a>
               </Link>
-            </Box>
+            </Box> */}
           </Box>
           {/* End of footer logo column */}
           <Box {...colTwo}>

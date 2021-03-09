@@ -16,6 +16,7 @@ import ScalableSections from 'containers/Crypto/ScalableSection';
 import SlideSections from 'containers/Crypto/CryptoSlides';
 import BetaSections from 'containers/Crypto/BetaSection';
 import Footer from 'containers/Crypto/Footer';
+import CountDownSection from 'containers/Crypto/CountDown';
 
 const Crypto = () => {
   return (
@@ -44,9 +45,10 @@ const Crypto = () => {
           <BannerSlider />
           <Transactions />
           <ControlSections />
-          <TrustedProofSections />
-          <ScalableSections />
-          <SlideSections />
+          <CountDownSection />
+          {/* <TrustedProofSections /> */}
+          {/* <ScalableSections /> */}
+          {/* <SlideSections /> */}
           <BetaSections />
           <Footer />
         </ContentWrapper>
