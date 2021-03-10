@@ -24,9 +24,18 @@ const BannerWrapper = styled.section`
     padding-top: 130px;
     padding-bottom: 110px;
   }
+  .smart-city {
+    position: absolute;
+    right: 1%;
+  }
+  .new_york {
+    position: absolute;
+    right: 1%;
+    bottom: -3%;
+  }
   .particle {
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: 100%;
     top: 0;
     left: 0;

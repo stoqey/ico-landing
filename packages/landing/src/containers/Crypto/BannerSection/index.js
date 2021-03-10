@@ -12,6 +12,8 @@ import { Icon } from 'react-icons-kit';
 import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
 import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
 import BannerBG from 'common/assets/image/crypto/white_bg1.svg';
+import SmartCityGif from 'common/assets/image/crypto/animations/smart_city.gif';
+// import NewYorkGif from 'common/assets/image/crypto/animations/nyc.gif';
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
 
 const BannerSection = ({
@@ -66,10 +68,7 @@ const BannerSection = ({
           <Box className="col" {...col}>
             <FeatureBlock
               title={
-                <Heading
-                  content="Beat wallstreet from anywhere"
-                  {...title}
-                />
+                <Heading content="Beat wallstreet from anywhere" {...title} />
               }
               description={
                 <Text
@@ -81,6 +80,8 @@ const BannerSection = ({
             />
             <FeatureBlock button={<ShareButtonGroup />} />
           </Box>
+          <img className="smart-city" src={SmartCityGif} />
+          {/* <img className="new_york" src={NewYorkGif} /> */}
         </Box>
       </Container>
     </BannerWrapper>
