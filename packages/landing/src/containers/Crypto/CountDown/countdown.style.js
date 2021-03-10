@@ -17,7 +17,7 @@ const SectionWrapper = styled.div`
     height: 300px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -66%);
   }
 
   .tweak-left {
