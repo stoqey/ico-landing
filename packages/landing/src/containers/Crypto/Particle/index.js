@@ -9,6 +9,8 @@ import Particle5 from 'common/assets/image/crypto/particles/particle-5.png';
 import Particle6 from 'common/assets/image/crypto/particles/particle-2.png';
 import Particle7 from 'common/assets/image/crypto/particles/particle-4.png';
 import ParticleStq from 'common/assets/image/crypto/particles/particle-6.png';
+import ParticleCicleSmall from 'common/assets/image/crypto/particles/circle_small.png';
+import ParticleCicleBig from 'common/assets/image/crypto/particles/circle_big.png';
 
 const ParticlesComponent = () => {
   return (
@@ -25,6 +27,31 @@ const ParticlesComponent = () => {
             shape: {
               type: ['images'],
               images: [
+                {
+                  src: `${ParticleCicleSmall}`,
+                  width: 22,
+                  height: 22,
+                },
+                {
+                  src: `${ParticleCicleSmall}`,
+                  width: 22,
+                  height: 22,
+                },
+                {
+                  src: `${ParticleCicleBig}`,
+                  width: 40,
+                  height: 40,
+                },
+                {
+                  src: `${ParticleCicleBig}`,
+                  width: 40,
+                  height: 40,
+                },
+                {
+                  src: `${ParticleCicleBig}`,
+                  width: 40,
+                  height: 40,
+                },
                 {
                   src: `${ParticleStq}`,
                   width: 30,
@@ -49,11 +76,6 @@ const ParticlesComponent = () => {
                   src: `${ParticleStq}`,
                   width: 41,
                   height: 41,
-                },
-                {
-                  src: `${ParticleStq}`,
-                  width: 22,
-                  height: 22,
                 },
                 {
                   src: `${ParticleStq}`,

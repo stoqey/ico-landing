@@ -20,8 +20,8 @@
     "clean:build": "lerna exec -- rimraf \"{.next,.cache,dist,out,build,.vercel}\"",
     "dev": "yarn workspace @landing/next run dev",
     "build": "yarn workspace @landing/next run build",
-    "next-start": "yarn workspace @landing/next run start",
-    "next-export": "yarn workspace @landing/next run export"
+    "start": "yarn workspace @landing/next run start",
+    "export": "yarn workspace @landing/next run export"
   },
   "husky": {
     "hooks": {

@@ -21,6 +21,8 @@ import FooterBG from 'common/assets/image/crypto/footer-bg.svg';
 import Logo from 'common/components/UIElements/Logo';
 import LogoImage from 'common/assets/image/logo-white.png';
 import LogoImageAlt from 'common/assets/image/logo.png';
+import NewYorkFooter from 'common/assets/image/crypto/footer/new_york_footer.png';
+
 import { socialLinks } from './social';
 
 const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
@@ -70,6 +72,7 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
           </div>
         </div>
       </Container>
+      <img className="footer-img" src={NewYorkFooter} />
     </FooterWrapper>
   );
 };
