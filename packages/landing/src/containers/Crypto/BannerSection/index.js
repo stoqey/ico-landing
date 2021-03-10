@@ -67,13 +67,13 @@ const BannerSection = ({
             <FeatureBlock
               title={
                 <Heading
-                  content="Beat wallstreet from anywhere"
+                  content="An open-source digital asset valued by trades from stocks & crypto"
                   {...title}
                 />
               }
               description={
                 <Text
-                  content="The stock market is tough. Every day is a new fight. Technology is our weapon. We cut losses. We identify opportunities. We focus. The market can be beaten. We love the game."
+                  content="The stock and crypto market is tough. Every day is a new fight. Stoqey technology is our weapon. We cut losses. We identify opportunities. We focus. The market can be beaten. We love the game"
                   {...description}
                 />
               }

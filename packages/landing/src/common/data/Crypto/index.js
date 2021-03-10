@@ -79,24 +79,23 @@ export const TESTIMONIALS = [
 export const TRANSACTIONS_FEATURE = [
   {
     image: FEATURE1,
-    title: 'Create Payment Address',
-    des: 'Provide your payout wallet address and callback URL to PayBear API.',
+    title: 'Create Payment Requests',
+    des: 'Submit multiple payment requests, all payment requests are approved',
   },
   {
     image: FEATURE2,
-    title: 'Ask for Payment',
-    des: 'Show your customer the wallet address as well as the payment amount.',
+    title: 'Buy And Sell',
+    des: 'Depending on market value buy and sell Stoqey immediately',
   },
   {
     image: FEATURE3,
-    title: 'Get Paid',
-    des: 'Payment is sent to the payout wallet immediately.',
+    title: 'Withdraw World Wide',
+    des: 'Payment is sent to the payout address 140 countries supported',
   },
   {
     image: FEATURE4,
-    title: 'Get Payment Notification.',
-    des:
-      'Callbacks are sent to the URL you specified. You can process customer order',
+    title: 'Get Transactions Notification',
+    des: 'All transactions activities are sent to you immediately',
   },
 ];
 export const PROOFS_FEATURE = [

@@ -88,7 +88,7 @@ TransactionsHistory.defaultProps = {
 
   // Transactions section title default style
   title: {
-    content: 'Our wallet is built for the crypto novice',
+    content: 'Our platform is built for novice traders',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -101,7 +101,7 @@ TransactionsHistory.defaultProps = {
   // Transactions section description default style
   description: {
     content:
-      'You can trust us for any kind of services and some of the world class companies have also trusted us .',
+      'You can trust us for any kind of service and some of the world-class traders have also trusted us',
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',

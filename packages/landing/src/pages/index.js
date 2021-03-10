@@ -45,7 +45,7 @@ const Crypto = () => {
           <Transactions />
           <ControlSections />
           <TrustedProofSections />
-          <ScalableSections />
+          {/* <ScalableSections /> */}
           <SlideSections />
           <BetaSections />
           <Footer />

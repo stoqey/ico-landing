@@ -55,9 +55,9 @@ const CryptoModern = () => {
             <Features />
             <WorkHistory />
             <Investment />
-            <FundRaising />
-            <Privacypolicy />
-            <WalletSection />
+            {/* <FundRaising /> */}
+            {/* <Privacypolicy /> */}
+            {/* <WalletSection /> */}
             <MapSection />
             <FaqSection />
             <Newsletter />
