@@ -21,7 +21,16 @@ const FooterWrapper = styled.section`
   @media (max-width: 767px) {
   }
 
+  .footer-img {
+    opacity: 0.5;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+  }
+
   .footer {
+    margin-top: 50px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
     align-content: center;

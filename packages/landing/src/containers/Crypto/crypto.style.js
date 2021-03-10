@@ -21,6 +21,12 @@ export const GlobalStyle = createGlobalStyle`
     position: relative;
   }
 
+  .no-mobile{
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
   .drawer-content-wrapper{
     @media (max-width: 767px) {
       width: 300px!important;

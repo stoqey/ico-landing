@@ -24,11 +24,11 @@ const CountDownSection = () => {
           </p>
 
           <p>
-            <img className="tweak-left" src={BlackGirlTweakGif} />
+            <img className="tweak-left no-mobile" src={BlackGirlTweakGif} />
           </p>
 
           <p>
-            <img className="tweak-right" src={WhitegirlTweakGif} />
+            <img className="tweak-right no-mobile" src={WhitegirlTweakGif} />
           </p>
 
           {/* <p>

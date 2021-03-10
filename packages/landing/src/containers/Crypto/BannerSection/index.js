@@ -14,6 +14,8 @@ import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
 import BannerBG from 'common/assets/image/crypto/white_bg1.svg';
 import SmartCityGif from 'common/assets/image/crypto/animations/smart_city.gif';
 // import NewYorkGif from 'common/assets/image/crypto/animations/nyc.gif';
+import Bg from './Background';
+
 import BannerWrapper, { BgImageWrapper } from './bannerSection.style';
 
 const BannerSection = ({
@@ -58,33 +60,41 @@ const BannerSection = ({
     </Fragment>
   );
   return (
-    <BannerWrapper id="banner_section">
-      <Particles />
-      <BgImageWrapper>
-        <Image src={BannerBG} alt="banner background" />
-      </BgImageWrapper>
-      <Container>
-        <Box className="row" {...row}>
-          <Box className="col" {...col}>
-            <FeatureBlock
-              title={
-                <Heading content="Beat wallstreet from anywhere" {...title} />
-              }
-              description={
-                <Text
-                  content="The stock market is tough. Every day is a new fight. Technology is our weapon. We cut losses. We identify opportunities. We focus. The market can be beaten. We love the game."
-                  {...description}
-                />
-              }
-              button={<ButtonGroup />}
-            />
-            <FeatureBlock button={<ShareButtonGroup />} />
+    <>
+      {/* <div className="bgreverse" style={{ position: 'absolute', zIndex: 1 }}>
+        <Bg />
+      </div> */}
+      {/* <div className="bgreverse">
+          <Bg />
+        </div> */}
+      <BannerWrapper id="banner_section">
+        <Particles />
+        <BgImageWrapper>
+          <Image src={BannerBG} alt="banner background" />
+        </BgImageWrapper>
+        <Container>
+          <Box className="row" {...row}>
+            <Box className="col" {...col}>
+              <FeatureBlock
+                title={
+                  <Heading content="Beat wallstreet from anywhere" {...title} />
+                }
+                description={
+                  <Text
+                    content="The stock market is tough. Every day is a new fight. Technology is our weapon. We cut losses. We identify opportunities. We focus. The market can be beaten. We love the game."
+                    {...description}
+                  />
+                }
+                button={<ButtonGroup />}
+              />
+              <FeatureBlock button={<ShareButtonGroup />} />
+            </Box>
+            <img className="smart-city no-mobile" src={SmartCityGif} />
+            {/* <img className="new_york" src={NewYorkGif} /> */}
           </Box>
-          <img className="smart-city" src={SmartCityGif} />
-          {/* <img className="new_york" src={NewYorkGif} /> */}
-        </Box>
-      </Container>
-    </BannerWrapper>
+        </Container>
+      </BannerWrapper>
+    </>
   );
 };
 

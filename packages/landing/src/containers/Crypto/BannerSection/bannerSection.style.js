@@ -1,17 +1,22 @@
 import styled from 'styled-components';
+import { renderToStaticMarkup } from 'react-dom/server';
 import { themeGet } from '@styled-system/theme-get';
 import BannerBG from 'common/assets/image/reverse.svg';
+import Bg from './Background';
 
+/**
+   
+ */
 const BannerWrapper = styled.section`
   padding-top: 210px;
   padding-bottom: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(${BannerBG});
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   @media (max-width: 1440px) {
     padding-bottom: 305px;
   }
@@ -24,9 +29,18 @@ const BannerWrapper = styled.section`
     padding-top: 130px;
     padding-bottom: 110px;
   }
+
+  .bgreverse {
+    background: blue;
+    position: fixed;
+    width: 100%;
+    right: 0%;
+    top: 0%;
+  }
   .smart-city {
     position: absolute;
-    right: 1%;
+    right: -10%;
+    width: 600px;
   }
   .new_york {
     position: absolute;

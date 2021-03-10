@@ -67,7 +67,7 @@
 </g>
 <defs>
 <linearGradient id="paint0_linear" x1="241.71" y1="2.18251" x2="1429.23" y2="1431.02" gradientUnits="userSpaceOnUse">
-<stop offset="0.0421583" stop-color="#D00000" stop-opacity="0.78"/>
+<stop id="stopColor" offset="0.0421583" stop-color="#D00000" stop-opacity="0.78"/>
 <stop offset="1" stop-color="#F8BA00"/>
 </linearGradient>
 <linearGradient id="paint1_linear" x1="170.904" y1="717.975" x2="634.278" y2="717.975" gradientUnits="userSpaceOnUse">
