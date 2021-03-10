@@ -21,7 +21,8 @@
     "dev": "yarn workspace @landing/next run dev",
     "build": "yarn workspace @landing/next run build",
     "start": "yarn workspace @landing/next run start",
-    "export": "yarn workspace @landing/next run export"
+    "export": "yarn workspace @landing/next run export",
+    "serve": "serve -d packages/landing/out -p 5070"
   },
   "husky": {
     "hooks": {

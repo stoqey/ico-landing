@@ -6,7 +6,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   // distDir: '../../dist/functions/next'
-  assetPrefix: isProd ? 'beta/' : '',
+  // assetPrefix: isProd ? 'beta/' : '',
 };
 
 module.exports = withPlugins(
