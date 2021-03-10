@@ -19,6 +19,22 @@ const SectionWrapper = styled.div`
     left: 50%;
     transform: translate(-50%, -90%);
   }
+
+  .tweak-left {
+    z-index: 1000;
+    height: 400px;
+    position: absolute;
+    left: 10%;
+    transform: translate(-40%, -0%);
+  }
+
+  .tweak-right {
+    z-index: 1000;
+    height: 500px;
+    position: absolute;
+    right: -10%;
+    transform: translate(-10%, -20%);
+  }
 `;
 
 export const ContentWrapper = styled.div`
