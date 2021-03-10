@@ -11,6 +11,14 @@ const SectionWrapper = styled.div`
   @media only screen and (max-width: 480px) {
     padding: 60px 0 5px;
   }
+
+  .rockstar-gif {
+    z-index: 1000;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -90%);
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -100,7 +108,7 @@ export const ContentWrapper = styled.div`
       .dividerColon {
         font-size: 36px;
         line-height: 48px;
-        color: #fff;
+        color: #000;
         font-family: 'Roboto';
         font-weight: 700;
         text-align: center;

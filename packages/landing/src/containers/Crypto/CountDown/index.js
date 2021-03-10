@@ -5,6 +5,7 @@ import Heading from 'common/components/Heading';
 import Button from 'common/components/Button';
 import Image from 'common/components/Image';
 import Container from 'common/components/UI/Container';
+import RockstarGif from 'common/assets/image/crypto/animations/rockstar.gif';
 import NormalClock from './timer';
 const deadline = new Date('2021-03-20');
 import SectionWrapper, { ContentWrapper } from './countdown.style';
@@ -14,13 +15,17 @@ const CountDownSection = () => {
     <SectionWrapper>
       <Container>
         <ContentWrapper>
-          <Heading content="Token Pre-sale starting in: " />
+          <p>
+            <img className="rockstar-gif" src={RockstarGif} />
+          </p>
+
+          <Heading content="IPO Launch starting in: " />
           <Fade up>
             <div className="timerCount">
               <NormalClock countdown={deadline} divider="true" />
             </div>
           </Fade>
-          <Button className="primary" title="BUY NOW" />
+          <Button className="primary" title="BUY Pre-IPO NOW" />
         </ContentWrapper>
       </Container>
     </SectionWrapper>
