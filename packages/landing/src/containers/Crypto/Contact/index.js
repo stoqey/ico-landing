@@ -33,26 +33,8 @@ const ContactSection = ({
           </Box>
           <Box {...row}>
             <Box {...contactForm}>
-              <ContactFromWrapper>
-                <Input
-                  inputType="email"
-                  placeholder="Enter Your Email address"
-                  iconPosition="right"
-                  isMaterial={false}
-                  className="email_input"
-                  aria-label="email"
-                />
-                <Button {...button} title="SEND MESSAGE" />
-              </ContactFromWrapper>
               <Box className="contactdes">
-                <Text
-                  as="span"
-                  {...note}
-                  content="Become part of our ever growing community. "
-                />
-                <Link href="#">
-                  <a className="">Join us on Telegram. </a>
-                </Link>
+                <Button {...button} title="Rip the benefits now" />
               </Box>
             </Box>
           </Box>
@@ -139,7 +121,7 @@ ContactSection.defaultProps = {
     textAlign: ['center', 'center'],
   },
   title: {
-    content: 'Get The Latest PayBear Updates',
+    content: 'Invest in Stoqey today',
     fontSize: ['20px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -150,7 +132,8 @@ ContactSection.defaultProps = {
   },
 
   description: {
-    content: 'And be the first to know when our crowdsale launches!.',
+    content:
+      "You're one of the few chosen ones to invest in Stoqey before it launches!",
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',

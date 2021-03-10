@@ -79,24 +79,23 @@ export const TESTIMONIALS = [
 export const TRANSACTIONS_FEATURE = [
   {
     image: FEATURE1,
-    title: 'Create Payment Address',
-    des: 'Provide your payout wallet address and callback URL to PayBear API.',
+    title: 'Create An account',
+    des: 'A wallet where you can add and withdraw money from.',
   },
   {
     image: FEATURE2,
-    title: 'Ask for Payment',
-    des: 'Show your customer the wallet address as well as the payment amount.',
+    title: 'Buy or Sell the STQ™ stock',
+    des: 'Throw your money at our robots and see how it goes',
   },
   {
     image: FEATURE3,
     title: 'Get Paid',
-    des: 'Payment is sent to the payout wallet immediately.',
+    des: 'Payment is sent out immediately from the wallet.',
   },
   {
     image: FEATURE4,
-    title: 'Get Payment Notification.',
-    des:
-      'Callbacks are sent to the URL you specified. You can process customer order',
+    title: 'Get Investments Tips.',
+    des: 'Get a look on which companies our robots are trading',
   },
 ];
 export const PROOFS_FEATURE = [
