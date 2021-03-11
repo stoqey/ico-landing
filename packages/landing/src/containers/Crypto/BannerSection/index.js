@@ -30,13 +30,13 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="Get Started" {...btnStyle} />
-      <Button
+      <Button title="Tap In!" {...btnStyle} />
+      {/* <Button
         title="Download Whitepaper"
         variant="textButton"
         icon={<i className="flaticon-next" />}
         {...outlineBtnStyle}
-      />
+      /> */}
     </Fragment>
   );
   const ShareButtonGroup = () => (

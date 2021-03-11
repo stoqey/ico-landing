@@ -52,7 +52,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             />
             <Link href="/web">
               <a className="navbar_button">
-                <Button {...button} title="GET STARTED" />
+                <Button {...button} title="Tap In Goof!" />
               </a>
             </Link>
             <Drawer
@@ -70,7 +70,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               />
               <Link href="/web">
                 <a className="navbar_drawer_button">
-                  <Button {...button} title="GET STARTED" />
+                  <Button {...button} title="TAP IN Goof!" />
                 </a>
               </Link>
             </Drawer>

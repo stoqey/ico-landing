@@ -31,7 +31,7 @@ const TransactionsHistory = ({
             <FeatureBlock
               title={<Heading {...title} />}
               description={<Text {...description} />}
-              button={<Button title="GET DOCS" {...btnStyle} />}
+              button={<Button title="Learn more" {...btnStyle} />}
             />
           </Box>
           <Box className="colright" {...col} {...cardArea}>
