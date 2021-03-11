@@ -23,15 +23,7 @@ const Crypto = () => {
     <ThemeProvider theme={cryptoTheme}>
       <Fragment>
         <Head>
-          <title>Beta | Stoqey </title>
-          <meta name="Description" content="Beat Wallstreet from anywhere" />
-          <meta name="theme-color" content="#ec5555" />
-
-          {/* Load google fonts */}
-          <link
-            href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Heebo:300,400,500,700"
-            rel="stylesheet"
-          />
+          <title>Stoqey | Stupid Simple Investing </title>
         </Head>
         <ResetCSS />
         <GlobalStyle />
