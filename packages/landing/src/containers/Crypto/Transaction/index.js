@@ -88,7 +88,7 @@ TransactionsHistory.defaultProps = {
 
   // Transactions section title default style
   title: {
-    content: 'STQ™ is built for novice investors',
+    content: 'STQ™ is built for stupid investors 🤪',
     fontSize: ['24px', '26px', '30px', '36px', '40px'],
     lineHeight: ['30px', '32px', '40px', '50px', '55px'],
     fontWeight: '700',
@@ -100,7 +100,7 @@ TransactionsHistory.defaultProps = {
   },
   // Transactions section description default style
   description: {
-    content: `You can't trust yourself with investments but our Mighty Bots are world-class Money Making Machines.`,
+    content: `Let's be honest, you suck with investments 🤪, don't you worry our Mighty Bots are world-class Money Making Machines.`,
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',

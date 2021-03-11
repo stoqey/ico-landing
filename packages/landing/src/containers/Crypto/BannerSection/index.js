@@ -76,13 +76,11 @@ const BannerSection = ({
           <Box className="row" {...row}>
             <Box className="col" {...col}>
               <FeatureBlock
-                title={
-                  <Heading content="Beat wallstreet from anywhere" {...title} />
-                }
+                title={<Heading content="STUPID SIMPLE INVESTING" {...title} />}
                 description={
-                  <Text
-                    content="The stock market is tough. Every day is a new fight. Technology is our weapon. We cut losses. We identify opportunities. We focus. The market can be beaten. We love the game."
-                    {...description}
+                  <Heading
+                    content="Investing sucks, let US(🤖🤖🤖) do it for you? then well, uhm, 😉 we share profits 🥴💵 "
+                    {...title}
                   />
                 }
                 button={<ButtonGroup />}

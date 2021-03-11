@@ -13,7 +13,7 @@ import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
 import { ControlWrapper } from './controlSection.style';
 import ControlImage from 'common/assets/image/crypto/control.jpg';
-
+import { deadline } from '../CountDown';
 const Completionist = () => (
   <span className="readMore">You are good to go!</span>
 );
@@ -71,14 +71,14 @@ const ControlSection = ({
             />
             <Box className="readMoreSection">
               <Text {...readMoreTitle} />
-              <Link href="#">
+              {/* <Link href="#">
                 <a className="readMore">Read More. </a>
-              </Link>
+              </Link> */}
             </Box>
             <Fade up>
               <Box className="countDownSection">
                 <Countdown
-                  date={Date.now() + 909999999}
+                  date={deadline}
                   renderer={renderer}
                   completed={false}
                 />
@@ -86,12 +86,12 @@ const ControlSection = ({
             </Fade>
             <Box className="countDownButton">
               <Button
-                title="BUY TOKENS"
+                title="BUY STQ™ Pre-IPO"
                 className="countDownMainButton"
                 {...btnStyle}
               />
               <Button
-                title="35% Bonus"
+                title="🥵50% off🥵"
                 className="countDownDiscountButton"
                 {...btnStyle}
               />
@@ -173,7 +173,7 @@ ControlSection.defaultProps = {
     fontWeight: '500',
   },
   readMoreTitle: {
-    content: 'Pre-IPO SALE STATUS: LIVE.',
+    content: 'Pre-IPO SALE is LIVE',
     as: 'span',
     fontSize: ['18px', '18px', '20px', '20px', '20px'],
     lineHeight: ['25px', '27px', '27px', '27px', '27px'],
