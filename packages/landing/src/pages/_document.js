@@ -1,19 +1,19 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
-import favicon from 'common/assets/images/icon/favicon-16x16.png';
-import appleTouchIcon57 from 'common/assets/images/icon/apple-icon-57x57.png';
-import appleTouchIcon60 from 'common/assets/images/icon/apple-icon-60x60.png';
-import appleTouchIcon72 from 'common/assets/images/icon/apple-icon-72x72.png';
-import appleTouchIcon76 from 'common/assets/images/icon/apple-icon-76x76.png';
-import appleTouchIcon114 from 'common/assets/images/icon/apple-icon-114x114.png';
-import appleTouchIcon120 from 'common/assets/images/icon/apple-icon-120x120.png';
-import appleTouchIcon144 from 'common/assets/images/icon/apple-icon-144x144.png';
-import appleTouchIcon152 from 'common/assets/images/icon/apple-icon-152x152.png';
-import appleTouchIcon180 from 'common/assets/images/icon/apple-icon-180x180.png';
-import icon192 from 'common/assets/images/icon/android-icon-192x192.png';
-import icon32 from 'common/assets/images/icon/favicon-32x32.png';
-import icon96 from 'common/assets/images/icon/favicon-96x96.png';
-import icon16 from 'common/assets/images/icon/favicon-16x16.png';
+import favicon from 'common/assets/image/icon/favicon-16x16.png';
+import appleTouchIcon57 from 'common/assets/image/icon/apple-icon-57x57.png';
+import appleTouchIcon60 from 'common/assets/image/icon/apple-icon-60x60.png';
+import appleTouchIcon72 from 'common/assets/image/icon/apple-icon-72x72.png';
+import appleTouchIcon76 from 'common/assets/image/icon/apple-icon-76x76.png';
+import appleTouchIcon114 from 'common/assets/image/icon/apple-icon-114x114.png';
+import appleTouchIcon120 from 'common/assets/image/icon/apple-icon-120x120.png';
+import appleTouchIcon144 from 'common/assets/image/icon/apple-icon-144x144.png';
+import appleTouchIcon152 from 'common/assets/image/icon/apple-icon-152x152.png';
+import appleTouchIcon180 from 'common/assets/image/icon/apple-icon-180x180.png';
+import icon192 from 'common/assets/image/icon/android-icon-192x192.png';
+import icon32 from 'common/assets/image/icon/favicon-32x32.png';
+import icon96 from 'common/assets/image/icon/favicon-96x96.png';
+import icon16 from 'common/assets/image/icon/favicon-16x16.png';
 
 export default class CustomDocument extends Document {
   static async getInitialProps(ctx) {
