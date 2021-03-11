@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { ipoLinkAddress } from 'common/data/shared';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
@@ -30,7 +31,10 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="Tap In!" {...btnStyle} />
+      <a {...ipoLinkAddress}>
+        <Button title="Tap In!" {...btnStyle} />
+      </a>
+
       {/* <Button
         title="Download Whitepaper"
         variant="textButton"

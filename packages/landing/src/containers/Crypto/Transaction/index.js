@@ -8,6 +8,7 @@ import Heading from 'common/components/Heading';
 import Button from 'common/components/Button';
 import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
+import { ipoLinkAddress } from 'common/data/shared';
 import { TRANSACTIONS_FEATURE } from 'common/data/Crypto';
 import { TransactionsWrapper, FeatureSection } from './transaction.style';
 
@@ -31,7 +32,11 @@ const TransactionsHistory = ({
             <FeatureBlock
               title={<Heading {...title} />}
               description={<Text {...description} />}
-              button={<Button title="Learn more" {...btnStyle} />}
+              button={
+                <a {...ipoLinkAddress}>
+                  <Button title="Learn more" {...btnStyle} />
+                </a>
+              }
             />
           </Box>
           <Box className="colright" {...col} {...cardArea}>

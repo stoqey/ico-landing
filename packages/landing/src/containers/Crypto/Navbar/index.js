@@ -14,6 +14,7 @@ import { MENU_ITEMS } from 'common/data/Crypto';
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 
 import LogoImage from 'common/assets/image/logo-white.png';
+import { ipoLinkAddress } from 'common/data/shared';
 import LogoImageAlt from 'common/assets/image/logo.png';
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
@@ -50,11 +51,11 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               menuItems={MENU_ITEMS}
               offset={-70}
             />
-            <Link href="/web">
-              <a className="navbar_button">
-                <Button {...button} title="Tap In Goof!" />
-              </a>
-            </Link>
+
+            <a className="navbar_button" {...ipoLinkAddress}>
+              <Button {...button} title="Tap In Goof!" />
+            </a>
+
             <Drawer
               width="420px"
               placement="right"
@@ -68,11 +69,10 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 drawerClose={true}
                 offset={-100}
               />
-              <Link href="/web">
-                <a className="navbar_drawer_button">
-                  <Button {...button} title="TAP IN Goof!" />
-                </a>
-              </Link>
+
+              <a className="navbar_drawer_button" {...ipoLinkAddress}>
+                <Button {...button} title="TAP IN Goof!" />
+              </a>
             </Drawer>
           </Box>
         </Box>

@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
+import { ipoLinkAddress } from 'common/data/shared';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
@@ -34,7 +35,9 @@ const ContactSection = ({
           <Box {...row}>
             <Box {...contactForm}>
               <Box className="contactdes">
-                <Button {...button} title="Rip the benefits now" />
+                <a {...ipoLinkAddress}>
+                  <Button {...button} title="Rip the benefits now" />
+                </a>
               </Box>
             </Box>
           </Box>
