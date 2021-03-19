@@ -90,7 +90,6 @@ export const ContentWrapper = styled.div`
         @media (max-width: 480px) {
           width: 70px;
           height: 70px;
-          background-color: transparent;
         }
         .NormalupperCard {
           align-items: center;
@@ -128,9 +127,6 @@ export const ContentWrapper = styled.div`
         font-family: 'Roboto';
         font-weight: 700;
         text-align: center;
-        @media (max-width: 480px) {
-          display: none;
-        }
       }
     }
   }
