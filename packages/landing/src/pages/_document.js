@@ -61,7 +61,7 @@ export default class CustomDocument extends Document {
           />
           <meta
             name="description"
-            content="Stupid Simple Investing, Investing sucks, let bots do it for you? then share profits"
+            content="Investing sucks, let bots do it for you? then share profits"
           />
 
           <link rel="canonical" href="https://ipo.stoqey.com" />
@@ -76,7 +76,7 @@ export default class CustomDocument extends Document {
           <meta property="og:image" content={appleTouchIcon180} />
           <meta
             property="og:description"
-            content="Stupid Simple Investing, Investing sucks, let bots do it for you? then share profits"
+            content="Investing sucks, let bots do it for you? then share profits"
           />
 
           {/* Logos */}
