@@ -24,7 +24,7 @@ const TransactionsHistory = ({
   featureDescriptionStyle,
 }) => {
   return (
-    <TransactionsWrapper id="transactions">
+    <TransactionsWrapper id="works">
       <Container>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>

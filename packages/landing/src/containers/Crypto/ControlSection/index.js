@@ -54,7 +54,7 @@ const ControlSection = ({
   readMoreTitle,
 }) => {
   return (
-    <ControlWrapper id="control">
+    <ControlWrapper id="forwho">
       <Container>
         <Box className="row" {...row}>
           <Box className="colleft" {...col} style={{ flexDirection: 'column' }}>

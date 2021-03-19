@@ -53,7 +53,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
             />
 
             <a className="navbar_button" {...ipoLinkAddress}>
-              <Button {...button} title="Tap In Goof!" />
+              <Button {...button} title="Start Investing!" />
             </a>
 
             <Drawer
@@ -71,7 +71,7 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               />
 
               <a className="navbar_drawer_button" {...ipoLinkAddress}>
-                <Button {...button} title="TAP IN Goof!" />
+                <Button {...button} title="Start Investing!" />
               </a>
             </Drawer>
           </Box>

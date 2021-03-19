@@ -24,25 +24,20 @@ export const MENU_ITEMS = [
     offset: '0',
   },
   {
-    label: 'Feature',
-    path: '#trusted',
+    label: 'IPO',
+    path: '#ipo',
     offset: '0',
   },
   {
-    label: 'Offers',
-    path: '#scalable',
-    offset: '-10',
+    label: 'How it works?',
+    path: '#works',
+    offset: '0',
   },
 
   {
-    label: 'Payment Proofs',
-    path: '#featureslider',
-    offset: '-10',
-  },
-  {
-    label: 'Contact Us',
-    path: '#footerSection',
-    offset: '380',
+    label: 'For who?',
+    path: '#forwho',
+    offset: '100',
   },
 ];
 

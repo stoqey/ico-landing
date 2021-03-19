@@ -17,7 +17,7 @@ import SectionWrapper, { ContentWrapper } from './countdown.style';
 
 const CountDownSection = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="ipo">
       <Container>
         <ContentWrapper>
           <p>
