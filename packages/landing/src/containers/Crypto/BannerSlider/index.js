@@ -50,19 +50,19 @@ const TestimonialSection = ({
                   <TestimonialItem className="testimonial_item">
                     <Text content={slideItem.review} {...reviewStyle} />
                     <Box {...TestimonialMeta}>
-                      <ImageWrapper>
+                      {/* <ImageWrapper>
                         <Image
                           src={slideItem.avatar}
                           alt={`reviewer-image-${index}`}
                         />
-                      </ImageWrapper>
-                      <Box>
+                      </ImageWrapper> */}
+                      {/* <Box>
                         <Heading content={slideItem.name} {...nameStyle} />
                         <Text
                           content={slideItem.designation}
                           {...designationStyle}
                         />
-                      </Box>
+                      </Box> */}
                     </Box>
                   </TestimonialItem>
                 </GlideSlide>

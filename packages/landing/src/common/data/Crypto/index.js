@@ -43,32 +43,22 @@ export const MENU_ITEMS = [
 
 export const TESTIMONIALS = [
   {
-    review:
-      'Best working experience  with this amazing team & in future, we want to work together',
+    review: 'Stoqey invests in cool companies',
     name: 'Jon Doe',
     designation: 'CEO of Dell Co.',
     avatar: `${AuthorOne}`,
   },
   {
-    review:
-      'Impressed with master class support of the team and really look forward for the future.',
+    review: 'Stoqey Algorithms run thousands/millions of investments',
     name: 'Jon Doe',
     designation: 'Co Founder of IBM',
     avatar: `${AuthorTwo}`,
   },
   {
-    review:
-      'I have bought more than 10 themes on ThemeForest, and this is the first one I review.',
+    review: 'Stoqey is 100% free, runs 20/7 everyday',
     name: 'Jeny Doe',
     designation: 'Manager of Hp co.',
     avatar: `${AuthorThree}`,
-  },
-  {
-    review:
-      'Impressed with master class support of the team and really look forward for the future.',
-    name: 'Jon Doe',
-    designation: 'Manager of Hp co.',
-    avatar: `${AuthorFour}`,
   },
 ];
 export const TRANSACTIONS_FEATURE = [
@@ -151,12 +141,12 @@ export const SCALABLE_FEATURE = [
 export const BETA_FEATURE = [
   {
     image: BETA1,
-    title: 'SEPA Transfers',
+    title: 'Instant Transfers',
     des: 'Deposit & Withdraw money.',
   },
   {
     image: BETA2,
-    title: '24/7 Support',
+    title: 'Live Support',
     des: 'Always here for you.',
   },
   {
