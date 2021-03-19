@@ -1,5 +1,12 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+  RedditShareButton,
+} from 'react-share';
 import { ipoLinkAddress } from 'common/data/shared';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
@@ -11,6 +18,8 @@ import Container from 'common/components/UI/Container';
 import Particles from '../Particle';
 import { Icon } from 'react-icons-kit';
 import { socialTwitter } from 'react-icons-kit/ionicons/socialTwitter';
+import { socialReddit } from 'react-icons-kit/ionicons/socialReddit';
+import { socialWhatsapp } from 'react-icons-kit/ionicons/socialWhatsapp';
 import { facebook2 } from 'react-icons-kit/icomoon/facebook2';
 import BannerBG from 'common/assets/image/crypto/white_bg1.svg';
 import SmartCityGif from 'common/assets/image/crypto/animations/smart_city.gif';
@@ -45,22 +54,79 @@ const BannerSection = ({
   );
   const ShareButtonGroup = () => (
     <Fragment>
-      <Button
-        title="Share on Twitter"
-        variant="textButton"
-        iconPosition="left"
-        icon={<Icon icon={socialTwitter} />}
-        {...outlineBtnStyle}
-        className="btnWithoutColor"
-      />
-      <Button
-        title="Share on Facebook"
-        variant="textButton"
-        iconPosition="left"
-        icon={<Icon icon={facebook2} />}
-        {...outlineBtnStyle}
-        className="btnWithoutColor"
-      />
+      <TwitterShareButton
+        url="https://stoqey.com"
+        title="Stupid Simple Investing"
+        via="stoqey_"
+        related={['stoqey_', 'ceddybi', 'patmuhi']}
+        hashtags={[
+          'stoqey',
+          'investing',
+          'stocks',
+          'IPO',
+          'crypto',
+          'investments',
+        ]}
+      >
+        <Button
+          title="Tweeeet This"
+          variant="textButton"
+          iconPosition="left"
+          icon={<Icon icon={socialTwitter} />}
+          {...outlineBtnStyle}
+          className="btnWithoutColor"
+        />
+      </TwitterShareButton>
+
+      <RedditShareButton
+        url="https://stoqey.com"
+        title="Stupid Simple Investing"
+        via="stoqey_"
+        via="stoqey_"
+        related={['stoqey_', 'ceddybi', 'patmuhi']}
+        hashtags={[
+          'stoqey',
+          'investing',
+          'stocks',
+          'IPO',
+          'crypto',
+          'investments',
+        ]}
+      >
+        <Button
+          title="Redditttt This"
+          variant="textButton"
+          iconPosition="left"
+          icon={<Icon icon={socialReddit} />}
+          {...outlineBtnStyle}
+          className="btnWithoutColor"
+        />
+      </RedditShareButton>
+
+      <WhatsappShareButton
+        url="https://stoqey.com"
+        title="Stupid Simple Investing"
+        via="stoqey_"
+        via="stoqey_"
+        related={['stoqey_', 'ceddybi', 'patmuhi']}
+        hashtags={[
+          'stoqey',
+          'investing',
+          'stocks',
+          'IPO',
+          'crypto',
+          'investments',
+        ]}
+      >
+        <Button
+          title="Wassssup This"
+          variant="textButton"
+          iconPosition="left"
+          icon={<Icon icon={socialWhatsapp} />}
+          {...outlineBtnStyle}
+          className="btnWithoutColor"
+        />
+      </WhatsappShareButton>
     </Fragment>
   );
   return (
