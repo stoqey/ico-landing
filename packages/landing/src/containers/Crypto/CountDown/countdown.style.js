@@ -26,6 +26,10 @@ const SectionWrapper = styled.div`
     position: absolute;
     left: 10%;
     transform: translate(-40%, -0%);
+    @media (max-width: 480px) {
+      height: 220px;
+      transform: translate(-35%, -40%);
+    }
   }
 
   .tweak-right {
@@ -34,6 +38,10 @@ const SectionWrapper = styled.div`
     position: absolute;
     right: -10%;
     transform: translate(-10%, -20%);
+    @media (max-width: 480px) {
+      height: 240px;
+      transform: translate(23%, -60%);
+    }
   }
 `;
 

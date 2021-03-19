@@ -21,11 +21,11 @@ const CountDownSection = () => {
       <Container>
         <ContentWrapper>
           <p>
-            <img className="rockstar-gif" src={DanceFanyGif} />
+            <img className="rockstar-gif no-mobile" src={DanceFanyGif} />
           </p>
 
           <p>
-            <img className="tweak-left no-mobile" src={BlackGirlTweakGif} />
+            <img className="tweak-left" src={BlackGirlTweakGif} />
           </p>
 
           <p>
@@ -36,7 +36,7 @@ const CountDownSection = () => {
             <img className="tweak-center" src={KidTweakGif} />
           </p> */}
 
-          <Heading content="IPO Launch starting in: " />
+          <Heading content="IPO Starting in: " />
           <Fade up>
             <div className="timerCount">
               <NormalClock countdown={deadline} divider="true"></NormalClock>
