@@ -149,7 +149,7 @@ const BannerSection = ({
                 title={<Heading content="STUPID SIMPLE INVESTING" {...title} />}
                 description={
                   <Heading
-                    content="Investing sucks, let US(🤖🤖🤖) do it for you? then well, uhm, 😉 we share profits 🥴💵 "
+                    content="Investing sucks, let US(🤖🤖🤖) do it for you? then we, uhm, 😉 share profits 🥴💵 "
                     {...title}
                   />
                 }
