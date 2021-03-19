@@ -13,7 +13,7 @@ import Button from 'common/components/Button';
 import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
 import { ControlWrapper } from './controlSection.style';
-import ControlImage from 'common/assets/image/crypto/control.jpg';
+import ControlImage from 'common/assets/image/buy_sell.png';
 import { deadline } from '../CountDown';
 const Completionist = () => (
   <span className="readMore">You are good to go!</span>
