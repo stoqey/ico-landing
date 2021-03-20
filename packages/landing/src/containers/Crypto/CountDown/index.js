@@ -12,7 +12,7 @@ import WhitegirlTweakGif from 'common/assets/image/crypto/animations/tweak.gif';
 import KidTweakGif from 'common/assets/image/crypto/animations/kidtweak.gif';
 import DanceFanyGif from 'common/assets/image/crypto/animations/dance_funny.gif';
 import NormalClock from './timer';
-export const deadline = new Date('2021-03-20');
+export const deadline = new Date('2021-03-26');
 import SectionWrapper, { ContentWrapper } from './countdown.style';
 
 const CountDownSection = () => {
