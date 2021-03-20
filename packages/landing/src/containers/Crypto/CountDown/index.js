@@ -36,7 +36,7 @@ const CountDownSection = () => {
             <img className="tweak-center" src={KidTweakGif} />
           </p> */}
 
-          <Heading content="Pre-IPO Starting in: " />
+          <Heading content="IPO Starting in: " />
           <Fade up>
             <div className="timerCount">
               <NormalClock countdown={deadline} divider="true"></NormalClock>
