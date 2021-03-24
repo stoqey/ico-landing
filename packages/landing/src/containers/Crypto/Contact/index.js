@@ -36,7 +36,7 @@ const ContactSection = ({
             <Box {...contactForm}>
               <Box className="contactdes">
                 <a {...ipoLinkAddress}>
-                  <Button {...button} title="Rip the benefits now" />
+                  <Button {...button} title={`I'am all in! 🥴`} />
                 </a>
               </Box>
             </Box>
@@ -135,8 +135,7 @@ ContactSection.defaultProps = {
   },
 
   description: {
-    content:
-      "You're one of the few chosen ones to invest in Stoqey before it launches!",
+    content: "You're one of the few chosen ones to invest in Stoqey!",
     fontSize: '16px',
     fontWeight: '400',
     color: '#525f7f',

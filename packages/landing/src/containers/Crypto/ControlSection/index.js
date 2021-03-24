@@ -14,10 +14,8 @@ import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
 import { ControlWrapper } from './controlSection.style';
 import ControlImage from 'common/assets/image/buy_sell.png';
-import { deadline } from '../CountDown';
-const Completionist = () => (
-  <span className="readMore">You are good to go!</span>
-);
+import { deadline, deadlineReached } from '../CountDown';
+const Completionist = () => <span className="readMore">STQ™ is LIVE!</span>;
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {
   if (completed) {
@@ -70,32 +68,39 @@ const ControlSection = ({
               title={<Heading {...title} />}
               description={<Text {...description} />}
             />
-            <Box className="readMoreSection">
-              <Text {...readMoreTitle} />
-              {/* <Link href="#">
-                <a className="readMore">Read More. </a>
-              </Link> */}
-            </Box>
-            <Fade up>
-              <Box className="countDownSection">
-                <Countdown
-                  date={deadline}
-                  renderer={renderer}
-                  completed={false}
-                />
-              </Box>
-            </Fade>
+
+            {!deadlineReached && (
+              <>
+                <Box className="readMoreSection">
+                  <Text {...readMoreTitle} />
+                </Box>
+
+                <Fade up>
+                  <Box className="countDownSection">
+                    <Countdown
+                      date={deadline}
+                      renderer={renderer}
+                      completed={false}
+                    />
+                  </Box>
+                </Fade>
+              </>
+            )}
+
             <a className="countDownButton" {...ipoLinkAddress}>
               <Button
-                title="BUY STQ™ Pre-IPO"
+                title={deadlineReached ? 'BUY STQ™' : 'BUY STQ™ Pre-IPO'}
                 className="countDownMainButton"
                 {...btnStyle}
               />
-              <Button
-                title="🥵50% off🥵"
-                className="countDownDiscountButton"
-                {...btnStyle}
-              />
+              {!deadlineReached && (
+                <Button
+                  title={'BUY STQ™ Pre-IPO'}
+                  title="🥵50% off🥵"
+                  className="countDownDiscountButton"
+                  {...btnStyle}
+                />
+              )}
             </a>
           </Box>
         </Box>

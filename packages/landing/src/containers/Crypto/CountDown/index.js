@@ -13,9 +13,17 @@ import KidTweakGif from 'common/assets/image/crypto/animations/kidtweak.gif';
 import DanceFanyGif from 'common/assets/image/crypto/animations/dance_funny.gif';
 import NormalClock from './timer';
 export const deadline = new Date('2021-03-28');
+// export const deadline = new Date();
+
+export const deadlineReached = new Date() >= deadline;
+
 import SectionWrapper, { ContentWrapper } from './countdown.style';
 
 const CountDownSection = () => {
+  if (deadlineReached) {
+    return null;
+  }
+
   return (
     <SectionWrapper id="ipo">
       <Container>
