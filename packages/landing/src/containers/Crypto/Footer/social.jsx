@@ -4,26 +4,28 @@ import { facebook } from "react-icons-kit/fa/facebook";
 import { twitter } from "react-icons-kit/fa/twitter";
 import { github } from "react-icons-kit/fa/github";
 import { instagram } from "react-icons-kit/fa/instagram";
+import { redditAlien } from "react-icons-kit/fa/redditAlien";
 
 export const socialLinks = [
   {
     id: 0,
+    icon: <Icon icon={redditAlien} />,
+    name: "reddit",
+    link: "https://www.reddit.com/r/stoqey/",
+  },
+  {
+    id: 1,
     icon: <Icon icon={github} />,
     name: "github",
     link: "https://github.com/stoqey",
   },
   {
-    id: 1,
+    id: 2,
     icon: <Icon icon={instagram} />,
     name: "instagram",
     link: "https://instagram.com/stoqey",
   },
-  {
-    id: 2,
-    icon: <Icon icon={twitter} />,
-    name: "twitter",
-    link: "https://twitter.com/stoqey_",
-  },
+  
   {
     id: 3,
     icon: <Icon icon={linkedin} />,
