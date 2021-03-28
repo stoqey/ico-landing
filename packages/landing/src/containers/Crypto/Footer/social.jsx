@@ -20,12 +20,17 @@ export const socialLinks = [
     link: "https://github.com/stoqey",
   },
   {
+    id: 4,
+    icon: <Icon icon={twitter} />,
+    name: 'twitter',
+    link: 'https://twitter.com/stoqey_',
+  },
+  {
     id: 2,
     icon: <Icon icon={instagram} />,
     name: "instagram",
     link: "https://instagram.com/stoqey",
   },
-  
   {
     id: 3,
     icon: <Icon icon={linkedin} />,
