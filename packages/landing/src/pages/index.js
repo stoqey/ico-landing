@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import Head from 'next/head';
 import Sticky from 'react-stickynode';
 import { ThemeProvider } from 'styled-components';
+import { Amplitude, LogOnMount } from '@amplitude/react-amplitude';
 import { cryptoTheme } from 'common/theme/crypto';
 import { ResetCSS } from 'common/assets/css/style';
 import { GlobalStyle, ContentWrapper } from 'containers/Crypto/crypto.style';
@@ -18,35 +19,60 @@ import BetaSections from 'containers/Crypto/BetaSection';
 import Footer from 'containers/Crypto/Footer';
 import CountDownSection from 'containers/Crypto/CountDown';
 
-const Crypto = () => {
-  return (
-    <ThemeProvider theme={cryptoTheme}>
-      <Fragment>
-        <Head>
-          <title>Stoqey | Stupid Simple Investing </title>
-        </Head>
-        <ResetCSS />
-        <GlobalStyle />
-        <ContentWrapper>
-          <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
-            <DrawerProvider>
-              <Navbar />
-            </DrawerProvider>
-          </Sticky>
-          <Banner />
-          <BannerSlider />
-          <CountDownSection />
-          <Transactions />
-          <ControlSections />
+const Landing = () => {
+  const LandingComponent = () => {
+    return (
+      <ThemeProvider theme={cryptoTheme}>
+        <Fragment>
+          <Head>
+            <title>Stoqey | Stupid Simple Investing </title>
+          </Head>
+          <ResetCSS />
+          <GlobalStyle />
+          <ContentWrapper>
+            <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
+              <DrawerProvider>
+                <Navbar />
+              </DrawerProvider>
+            </Sticky>
+            <Banner />
+            <BannerSlider />
+            <CountDownSection />
+            <Transactions />
+            <ControlSections />
 
-          {/* <TrustedProofSections /> */}
-          {/* <ScalableSections /> */}
-          {/* <SlideSections /> */}
-          <BetaSections />
-          <Footer />
-        </ContentWrapper>
-      </Fragment>
-    </ThemeProvider>
-  );
+            {/* <TrustedProofSections /> */}
+            {/* <ScalableSections /> */}
+            {/* <SlideSections /> */}
+            <BetaSections />
+            <Footer />
+          </ContentWrapper>
+        </Fragment>
+      </ThemeProvider>
+    );
+  };
+
+  if (process.browser) {
+    return (
+      <Amplitude
+        eventProperties={(inheritedProps) => ({
+          ...inheritedProps,
+          page: {
+            ...inheritedProps.page,
+            name: 'landing',
+          },
+        })}
+      >
+        {() => (
+          <>
+            <LogOnMount eventType="page-displayed" />
+            <LandingComponent />
+          </>
+        )}
+      </Amplitude>
+    );
+  }
+
+  return <LandingComponent />;
 };
-export default Crypto;
+export default Landing;
