@@ -7,7 +7,7 @@ import {
   WhatsappShareButton,
   RedditShareButton,
 } from 'react-share';
-import { ipoLinkAddress } from 'common/data/shared';
+import { TLink } from 'common/data/shared';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
@@ -40,9 +40,9 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <a {...ipoLinkAddress}>
+      <TLink title="Tap In!">
         <Button title="Tap In!" {...btnStyle} />
-      </a>
+      </TLink>
 
       {/* <Button
         title="Download Whitepaper"

@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Countdown from 'react-countdown-now';
-import { ipoLinkAddress } from 'common/data/shared';
+import { TLink } from 'common/data/shared';
 import Box from 'common/components/Box';
 import Fade from 'react-reveal/Fade';
 import Card from 'common/components/Card';
@@ -87,7 +87,7 @@ const ControlSection = ({
               </>
             )}
 
-            <a className="countDownButton" {...ipoLinkAddress}>
+            <TLink className="countDownButton">
               <Button
                 title={deadlineReached ? 'BUY STQ™' : 'BUY STQ™ Pre-IPO'}
                 className="countDownMainButton"
@@ -101,7 +101,7 @@ const ControlSection = ({
                   {...btnStyle}
                 />
               )}
-            </a>
+            </TLink>
           </Box>
         </Box>
       </Container>

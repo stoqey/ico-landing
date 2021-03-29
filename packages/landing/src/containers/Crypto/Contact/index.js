@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { ipoLinkAddress } from 'common/data/shared';
+import { TLink } from 'common/data/shared';
 import Box from 'common/components/Box';
 import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
@@ -35,9 +35,9 @@ const ContactSection = ({
           <Box {...row}>
             <Box {...contactForm}>
               <Box className="contactdes">
-                <a {...ipoLinkAddress}>
-                  <Button {...button} title={`I'am all in! 🥴`} />
-                </a>
+                <TLink title={`I'm all in! 🥴`}>
+                  <Button {...button} title={`I'm all in! 🥴`} />
+                </TLink>
               </Box>
             </Box>
           </Box>

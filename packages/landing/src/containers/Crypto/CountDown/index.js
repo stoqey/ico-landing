@@ -4,7 +4,7 @@ import Text from 'common/components/Text';
 import Heading from 'common/components/Heading';
 import Button from 'common/components/Button';
 import Image from 'common/components/Image';
-import { ipoLinkAddress } from 'common/data/shared';
+import { TLink } from 'common/data/shared';
 import Container from 'common/components/UI/Container';
 import RockstarGif from 'common/assets/image/crypto/animations/rockstar.gif';
 import BlackGirlTweakGif from 'common/assets/image/crypto/animations/blackgirl_tweak.gif';
@@ -50,9 +50,9 @@ const CountDownSection = () => {
               <NormalClock countdown={deadline} divider="true"></NormalClock>
             </div>
           </Fade>
-          <a {...ipoLinkAddress}>
+          <TLink title="BUY Pre-IPO NOW">
             <Button className="primary" title="BUY Pre-IPO NOW" />
-          </a>
+          </TLink>
         </ContentWrapper>
       </Container>
     </SectionWrapper>

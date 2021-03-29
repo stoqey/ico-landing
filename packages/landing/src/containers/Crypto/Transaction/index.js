@@ -8,7 +8,7 @@ import Heading from 'common/components/Heading';
 import Button from 'common/components/Button';
 import FeatureBlock from 'common/components/FeatureBlock';
 import Container from 'common/components/UI/Container';
-import { ipoLinkAddress } from 'common/data/shared';
+import { TLink } from 'common/data/shared';
 import { TRANSACTIONS_FEATURE } from 'common/data/Crypto';
 import { TransactionsWrapper, FeatureSection } from './transaction.style';
 
@@ -33,9 +33,9 @@ const TransactionsHistory = ({
               title={<Heading {...title} />}
               description={<Text {...description} />}
               button={
-                <a {...ipoLinkAddress}>
+                <TLink title="Learn more">
                   <Button title="Learn more" {...btnStyle} />
-                </a>
+                </TLink>
               }
             />
           </Box>

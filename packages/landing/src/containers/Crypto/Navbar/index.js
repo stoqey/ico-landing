@@ -14,7 +14,7 @@ import { MENU_ITEMS } from 'common/data/Crypto';
 import ScrollSpyMenu from 'common/components/ScrollSpyMenu';
 
 import LogoImage from 'common/assets/image/logo-white.png';
-import { ipoLinkAddress } from 'common/data/shared';
+import { TLink } from 'common/data/shared';
 import LogoImageAlt from 'common/assets/image/logo.png';
 
 const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
@@ -52,9 +52,9 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
               offset={-70}
             />
 
-            <a className="navbar_button" {...ipoLinkAddress}>
+            <TLink className="navbar_button" title="Start Investing!">
               <Button {...button} title="Start Investing!" />
-            </a>
+            </TLink>
 
             <Drawer
               width="420px"
@@ -70,9 +70,9 @@ const Navbar = ({ navbarStyle, logoStyle, button, row, menuWrapper }) => {
                 offset={-100}
               />
 
-              <a className="navbar_drawer_button" {...ipoLinkAddress}>
+              <TLink className="navbar_drawer_button" title="Start Investing!">
                 <Button {...button} title="Start Investing!" />
-              </a>
+              </TLink>
             </Drawer>
           </Box>
         </Box>
