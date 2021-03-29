@@ -11293,6 +11293,13 @@ react-accessible-accordion@3.3.3:
   resolved "https://registry.yarnpkg.com/react-accessible-accordion/-/react-accessible-accordion-3.3.3.tgz#387a3f4ab1840b5b6dff9f1f16544f658d5c8e12"
   integrity sha512-I1Niy21IIyXIzcDuIlTnnN3k8bUux7puq60eyNuwf+lhvftnocn7hLhAz2NycXrZOqBClqi50YBqXlnbOTNrjQ==
 
+react-amplitude-hooks@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/react-amplitude-hooks/-/react-amplitude-hooks-0.10.1.tgz#4aab50aabe60e836e3f62b19734ab182dfa9946c"
+  integrity sha512-5TU4/L9eYpd73wXT8mAEjPsJU/HdV3gtXnfLfCIJC/kiUFlo7Z6y+fX6H4/3Ne1fpEV4o+BUv46oFYhbPZ+pKQ==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-anchor-link-smooth-scroll@^1.0.12:
   version "1.0.12"
   resolved "https://registry.yarnpkg.com/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.12.tgz#5cd49c73e74be6d20b4c05a5e5c72d07ebbedac7"
