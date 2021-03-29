@@ -124,6 +124,22 @@ export default class CustomDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Heebo:300,400,500,700"
             rel="stylesheet"
           />
+
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GTAG}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments)}
+                gtag('js', new Date());
+
+                gtag('config', '${process.env.NEXT_PUBLIC_GTAG}');
+          `,
+            }}
+          ></script>
         </Head>
         <body>
           <Main />
