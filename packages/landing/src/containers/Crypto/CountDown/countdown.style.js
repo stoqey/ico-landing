@@ -28,7 +28,7 @@ const SectionWrapper = styled.div`
     transform: translate(-40%, -0%);
     @media (max-width: 480px) {
       height: 220px;
-      transform: translate(-35%, -40%);
+      transform: translate(20%, -72%);
     }
   }
 
@@ -107,7 +107,6 @@ export const ContentWrapper = styled.div`
             font-size: 60px;
             letter-spacing: -1px;
             color: #ffffff;
-            font-family: 'Roboto';
             font-weight: 300;
             text-align: center;
             @media (max-width: 480px) {
@@ -119,7 +118,6 @@ export const ContentWrapper = styled.div`
           font-size: 14px;
           letter-spacing: 3px;
           color: #8ec7ff;
-          font-family: 'Roboto';
           font-weight: 500;
           text-align: center;
           margin-top: 12px;
@@ -132,7 +130,6 @@ export const ContentWrapper = styled.div`
         font-size: 36px;
         line-height: 48px;
         color: #000;
-        font-family: 'Roboto';
         font-weight: 700;
         text-align: center;
       }
