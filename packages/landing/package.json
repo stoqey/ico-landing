@@ -14,10 +14,12 @@
     "logs": "firebase functions:log"
   },
   "dependencies": {
+    "@amplitude/react-amplitude": "^1.0.0",
     "@glidejs/glide": "^3.4.1",
     "@reach/accordion": "^0.11.2",
     "@redq/reuse-modal": "^1.1.9",
     "@styled-system/theme-get": "^5.1.2",
+    "amplitude-js": "^8.1.0",
     "firebase-admin": "^9.4.1",
     "firebase-functions": "^3.11.0",
     "next": "^10.0.1",
