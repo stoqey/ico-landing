@@ -49,7 +49,7 @@ const Footer = ({ row, col, colOne, colTwo, titleStyle }) => {
         </div>
         <div className="footer">
           <div className="fitem">
-            <p>
+            <p style={{ textAlign: 'center' }}>
               {' '}
               Copyright © {new Date().getFullYear()} Stoqey Inc. All rights
               reserved{' '}
