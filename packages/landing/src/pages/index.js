@@ -18,6 +18,7 @@ import SlideSections from 'containers/Crypto/CryptoSlides';
 import BetaSections from 'containers/Crypto/BetaSection';
 import Footer from 'containers/Crypto/Footer';
 import CountDownSection from 'containers/Crypto/CountDown';
+import AnnouncementBar from 'containers/AnnouncementBar';
 
 const Landing = () => {
   const LandingComponent = () => {
@@ -29,6 +30,7 @@ const Landing = () => {
           </Head>
           <ResetCSS />
           <GlobalStyle />
+          <AnnouncementBar />
           <ContentWrapper>
             <Sticky top={0} innerZ={9999} activeClass="sticky-nav-active">
               <DrawerProvider>

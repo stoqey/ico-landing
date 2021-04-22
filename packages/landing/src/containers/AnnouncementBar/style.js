@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
     -webkit-font-smoothing: antialiased;
     color: #5c5e60;
     position: inherit;
-    background-color: gold;
+    background-color: aliceblue;
     box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.15);
   }
   #hellobar-bar.regular {

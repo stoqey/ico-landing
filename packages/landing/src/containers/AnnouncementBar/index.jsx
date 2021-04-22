@@ -19,7 +19,7 @@ export const AnnouncementBar = () => {
           <div className="hb-text-wrapper">
             <div className="hb-headline-text">
               <p>
-                <span>How to invest</span>
+                <span>How to invest 💃💃💃</span>
               </p>
             </div>
           </div>
