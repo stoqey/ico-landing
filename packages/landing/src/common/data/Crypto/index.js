@@ -23,11 +23,11 @@ export const MENU_ITEMS = [
     path: '#banner_section',
     offset: '0',
   },
-  {
-    label: 'IPO',
-    path: '#ipo',
-    offset: '0',
-  },
+  // {
+  //   label: 'IPO',
+  //   path: '#ipo',
+  //   offset: '0',
+  // },
   {
     label: 'How it works?',
     path: '#works',
