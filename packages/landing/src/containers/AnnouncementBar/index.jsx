@@ -16,22 +16,33 @@ export const AnnouncementBar = () => {
     <Wrapper>
       <div id="hellobar-bar" className="regular closable">
         <div className="hb-content-wrapper">
-          <div className="hb-text-wrapper">
+          {/* <div className="hb-text-wrapper">
             <div className="hb-headline-text">
               <p>
                 <span>How to invest 💃💃💃</span>
               </p>
             </div>
-          </div>
+          </div> */}
+          {/* <a
+            href="https://app.stoqey.com/blog/how-to-invest"
+            target="_blank"
+            className="hb-cta hb-cta-button"
+          >
+            <div className="hb-text-holder">
+              <p>Product Hunt 🚀</p>
+            </div>
+          </a> */}
+
           <a
             href="https://app.stoqey.com/blog/how-to-invest"
             target="_blank"
             className="hb-cta hb-cta-button"
           >
             <div className="hb-text-holder">
-              <p>Learn more</p>
+              <p>How to invest 💃💃💃</p>
             </div>
           </a>
+          
         </div>
         <div className="hb-close-wrapper">
           <a href="javascript:void(0);" className="icon-close" onClick={close}>
