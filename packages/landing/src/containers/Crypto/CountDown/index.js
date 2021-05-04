@@ -20,16 +20,16 @@ export const deadlineReached = new Date() >= deadline;
 import SectionWrapper, { ContentWrapper } from './countdown.style';
 
 const CountDownSection = () => {
-  if (deadlineReached) {
-    return null;
-  }
+  // if (deadlineReached) {
+  //   return null;
+  // }
 
   return (
     <SectionWrapper id="ipo">
       <Container>
         <ContentWrapper>
           <p>
-            <img className="rockstar-gif no-mobile" src={DanceFanyGif} />
+            <img className="rockstar-gif" src={DanceFanyGif} />
           </p>
 
           <p>
@@ -37,22 +37,34 @@ const CountDownSection = () => {
           </p>
 
           <p>
-            <img className="tweak-right no-mobile" src={WhitegirlTweakGif} />
+            <img className="tweak-right" src={WhitegirlTweakGif} />
           </p>
 
           {/* <p>
             <img className="tweak-center" src={KidTweakGif} />
           </p> */}
 
-          <Heading content="IPO Starting in: " />
-          <Fade up>
-            <div className="timerCount">
-              <NormalClock countdown={deadline} divider="true"></NormalClock>
-            </div>
-          </Fade>
-          <TLink title="BUY Pre-IPO NOW">
-            <Button className="primary" title="BUY Pre-IPO NOW" />
-          </TLink>
+          {deadline ? (
+            <p>
+              <div className="space-logo" />
+              <img className="logo-center" src={KidTweakGif} />
+            </p>
+          ) : (
+            <>
+              <Heading content="IPO Starting in: " />
+              <Fade up>
+                <div className="timerCount">
+                  <NormalClock
+                    countdown={deadline}
+                    divider="true"
+                  ></NormalClock>
+                </div>
+              </Fade>
+              <TLink title="BUY Pre-IPO NOW">
+                <Button className="primary" title="BUY Pre-IPO NOW" />
+              </TLink>
+            </>
+          )}
         </ContentWrapper>
       </Container>
     </SectionWrapper>

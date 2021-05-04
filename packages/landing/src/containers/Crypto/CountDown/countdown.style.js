@@ -17,7 +17,44 @@ const SectionWrapper = styled.div`
     height: 300px;
     position: absolute;
     left: 50%;
+    transform: translate(-50%, -100%);
+    @media only screen and (max-width: 768px) {
+      height: 200px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      height: 100px;
+    }
+  }
+
+  .space-logo {
+    height: 200px;
+    @media only screen and (max-width: 768px) {
+      height: 100px;
+    }
+
+    @media only screen and (max-width: 480px) {
+      height: 30px;
+    }
+  }
+
+  .logo-center {
+    z-index: 1000;
+    height: 400px;
+    position: absolute;
+    left: 50%;
     transform: translate(-50%, -66%);
+
+    @media only screen and (max-width: 768px) {
+      height: 320px;
+      right: 0%;
+      transform: translate(-45%, -53%);
+    }
+
+    @media only screen and (max-width: 480px) {
+      height: 200px;
+      transform: translate(-45%, -52%);
+    }
   }
 
   .tweak-left {
@@ -26,21 +63,34 @@ const SectionWrapper = styled.div`
     position: absolute;
     left: 10%;
     transform: translate(-40%, -0%);
-    @media (max-width: 480px) {
+
+    @media only screen and (max-width: 768px) {
       height: 220px;
-      transform: translate(20%, -72%);
+      transform: translate(-40%, -52%);
+    }
+
+    @media only screen and (max-width: 480px) {
+      height: 120px;
     }
   }
 
   .tweak-right {
-    z-index: 1000;
+    z-index: 100;
     height: 500px;
     position: absolute;
     right: -10%;
     transform: translate(-10%, -20%);
-    @media (max-width: 480px) {
-      height: 240px;
+
+    @media only screen and (max-width: 768px) {
+      right: 0%;
+      height: 220px;
       transform: translate(23%, -60%);
+    }
+
+    @media only screen and (max-width: 480px) {
+      right: 0%;
+      height: 150px;
+      transform: translate(0%, -70%);
     }
   }
 `;
