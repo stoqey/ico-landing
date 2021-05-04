@@ -27,6 +27,11 @@ const SectionWrapper = styled.div`
     }
   }
 
+  .cut {
+    z-index: 1000;
+    position: absolute;
+  }
+
   .space-logo {
     height: 200px;
     @media only screen and (max-width: 768px) {
@@ -34,7 +39,7 @@ const SectionWrapper = styled.div`
     }
 
     @media only screen and (max-width: 480px) {
-      height: 30px;
+      height: 80px;
     }
   }
 
@@ -43,17 +48,17 @@ const SectionWrapper = styled.div`
     height: 400px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, -66%);
+    transform: translate(-50%, -46%);
 
     @media only screen and (max-width: 768px) {
       height: 320px;
       right: 0%;
-      transform: translate(-45%, -53%);
+      transform: translate(-45%, -43%);
     }
 
     @media only screen and (max-width: 480px) {
       height: 200px;
-      transform: translate(-45%, -52%);
+      transform: translate(-45%, -32%);
     }
   }
 
@@ -79,7 +84,7 @@ const SectionWrapper = styled.div`
     height: 500px;
     position: absolute;
     right: -10%;
-    transform: translate(-10%, -20%);
+    transform: translate(-10%, -30%);
 
     @media only screen and (max-width: 768px) {
       right: 0%;
@@ -90,7 +95,7 @@ const SectionWrapper = styled.div`
     @media only screen and (max-width: 480px) {
       right: 0%;
       height: 150px;
-      transform: translate(0%, -70%);
+      transform: translate(0%, -80%);
     }
   }
 `;

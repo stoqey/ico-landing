@@ -46,7 +46,21 @@ const CountDownSection = () => {
 
           {deadline ? (
             <p>
-              <div className="space-logo" />
+              <div className="space-logo">
+                <a
+                  href="https://www.producthunt.com/posts/stoqey?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-stoqey"
+                  target="_blank"
+                >
+                  <img
+                    src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=294514&theme=light"
+                    alt="Stoqey - Stupid simple investing | Product Hunt"
+                    style={{ width: '250px', height: '54px' }}
+                    width={250}
+                    height={54}
+                  />
+                </a>
+              </div>
+
               <img className="logo-center" src={KidTweakGif} />
             </p>
           ) : (
