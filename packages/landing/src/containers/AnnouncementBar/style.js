@@ -46,8 +46,8 @@ export const Wrapper = styled.div`
     vertical-align: middle;
     margin: 5px 0;
     color: #ffffff;
-    background-color: #22af73;
-    border-color: #22af73;
+    background-color: darkgrey;
+    border-color: darkgrey;
   }
   .hb-cta-button {
     opacity: 1;

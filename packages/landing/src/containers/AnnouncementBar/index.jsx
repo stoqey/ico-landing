@@ -42,6 +42,17 @@ export const AnnouncementBar = () => {
               <p>How to invest 💃💃💃</p>
             </div>
           </a>
+
+          <a
+            href="https://app.stoqey.com/blog/withdraw"
+            target="_blank"
+            className="hb-cta hb-cta-button"
+            style={{ marginLeft: 10 }}
+          >
+            <div className="hb-text-holder">
+              <p>How to Withdraw 🤑🤑🤑</p>
+            </div>
+          </a>
           
         </div>
         <div className="hb-close-wrapper">
